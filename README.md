@@ -78,7 +78,7 @@ set MLFLOW_TRACKING_PASSWORD=68d3b710752042f592467a25d4447d71671482f1
 
 
 
-<!-- # AWS-CICD-Deployment-with-Github-Actions
+# AWS-CICD-Deployment-with-Github-Actions
 
 ## 1. Login to AWS console.
 
@@ -111,7 +111,7 @@ set MLFLOW_TRACKING_PASSWORD=68d3b710752042f592467a25d4447d71671482f1
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
+    - Save the URI: 333802819844.dkr.ecr.eu-north-1.amazonaws.com/mlproj
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -159,4 +159,4 @@ MLflow
 
  - Its Production Grade
  - Trace all of your expriements
- - Logging & tagging your model -->
+ - Logging & tagging your model

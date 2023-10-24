@@ -12,6 +12,7 @@ class ModelEvaluationTrainingPipeline:
         config = ConfigurationManager()
         model_evaluation_config = config.get_model_evaluation_config()
         model_evaluation_config = ModelEvaluation(config=model_evaluation_config)
+        print("before login")
         model_evaluation_config.log_into_mlflow()
 
 
@@ -19,8 +20,9 @@ class ModelEvaluationTrainingPipeline:
 if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        obj = ModelEvaluationTrainingPipeline()
         logger.info(f"Creating the object")
+        obj = ModelEvaluationTrainingPipeline()
+        logger.info(f"Creating the object main")
         obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
